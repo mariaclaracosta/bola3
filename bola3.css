@@ -1,0 +1,397 @@
+@keyframes bola {
+    0% {
+        left: 0px;
+    }
+
+    25% {
+        left: 400px;
+        background-image: linear-gradient(to top right, red, rgb(70, 12, 12));
+        transition: 1s;
+    }
+
+    37.5% {
+        background-image: linear-gradient(red, rgb(70, 12, 12));
+    }
+
+    50% {
+        left: -400px;
+        background-image: linear-gradient(to top left, red, rgb(70, 12, 12));
+        transition: 1s;
+    }
+
+    75% {
+        left: 0px;
+        background-image: linear-gradient(red, rgb(70, 12, 12));
+        transition: 1s;
+    }
+
+    100% {
+        left: 0%;
+        background-image: linear-gradient(red, rgb(70, 12, 12));
+        transition: 1s;
+    }
+}
+
+@keyframes sombra {
+    0% {
+        left: 0px;
+    }
+
+    25% {
+        left: 400px;
+        transition: 1s;
+    }
+
+    50% {
+        left: -400px;
+        transition: 1s;
+    }
+
+    75% {
+        left: 0px;
+        transition: 1s;
+    }
+
+    100% {
+        left: 0%;
+        transition: 1s;
+    }
+}
+
+@keyframes buraco {
+    0% {
+        left: 0px;
+    }
+
+    25% {
+        left: 400px;
+        top: -3px;
+        transform: rotateZ(-50deg);
+        transition: 1s;
+    }
+
+    37.5% {
+        top: 0px;
+    }
+
+    50% {
+        left: -400px;
+        transition: 1s;
+    }
+
+    75% {
+        left: 0px;
+        transition: 1s;
+    }
+
+    100% {
+        left: 0%;
+        transition: 1s;
+    }
+}
+
+@keyframes corpo {
+    0% {
+        left: 0px;
+    }
+
+    25% {
+        left: 400px;
+        transform: rotateZ(-50deg);
+        transition: 1s;
+    }
+
+    50% {
+        left: -400px;
+        transition: 1s;
+    }
+
+    75% {
+        left: 0px;
+        transition: 1s;
+    }
+
+    100% {
+        left: 0%;
+        transition: 1s;
+    }
+}
+
+@keyframes olho1 {
+    0% {
+        left: 0px;
+    }
+
+    25% {
+        left: 400px;
+        transition: 1s;
+        transform: rotateX(89deg);
+
+    }
+
+    50% {
+        left: -400px;
+        transition: 1s;
+        transform: rotateX(89deg);
+
+    }
+
+    75% {
+        left: 0px;
+        transition: 1s;
+        transform: rotateX(89deg);
+        top: 0px;
+    }
+
+    80% {
+        left: 0%;
+        transition: 1s;
+        transform: rotateX(0deg);
+        top: -5px;
+    }
+
+    85% {
+        left: 0%;
+        transition: 1s;
+        transform: rotateX(90deg);
+
+    }
+
+    90% {
+        left: 0%;
+        transition: 1s;
+        transform: rotateX(0deg);
+
+    }
+
+    95% {
+        left: 0%;
+        transition: 1s;
+        transform: rotateX(90deg);
+
+    }
+
+    100% {
+        left: 0%;
+        transition: 1s;
+        transform: rotateX(88deg);
+        top: -5px;
+    }
+}
+
+@keyframes olho2 {
+    0% {
+        left: 0px;
+    }
+
+    25% {
+        left: 400px;
+        transition: 1s;
+        transform: rotateX(89deg);
+
+    }
+
+    50% {
+        left: -400px;
+        transition: 1s;
+        transform: rotateX(89deg);
+
+    }
+
+    75% {
+        left: 0px;
+        transition: 1s;
+        transform: rotateX(89deg);
+        top: 0px;
+    }
+
+    80% {
+        left: 0%;
+        transition: 1s;
+        transform: rotateX(0deg);
+        top: -5px;
+    }
+
+    85% {
+        left: 0%;
+        transition: 1s;
+        transform: rotateX(90deg);
+
+    }
+
+    90% {
+        left: 0%;
+        transition: 1s;
+        transform: rotateX(0deg);
+        top: -5px;
+    }
+
+    95% {
+        left: 0%;
+        transition: 1s;
+        transform: rotateX(90deg);
+        top: -5px;
+    }
+
+    100% {
+        left: 0%;
+        transition: 1s;
+        transform: rotateX(88deg);
+        top: -5px;
+    }
+}
+
+@keyframes numero {
+    0% {
+        left: 0px;
+    }
+
+    25% {
+        left: 400px;
+        transition: 1s;
+    }
+
+    50% {
+        left: -400px;
+        transition: 1s;
+    }
+
+    75% {
+        left: 0px;
+        transition: 1s;
+    }
+
+    100% {
+        left: 0%;
+        transition: 1s;
+    }
+}
+
+.caminho {
+    position: absolute;
+    width: 100%;
+    padding-top: 200px;
+    padding-left: 45%;
+
+}
+
+.bola {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    transition-timing-function: ease-out;
+    animation-name: bola;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    border-radius: 50px;
+    background-image: linear-gradient(red, rgb(70, 12, 12));
+    animation-delay: 1.5s;
+    z-index: 1;
+}
+
+.sombra {
+    width: 120px;
+    height: 120px;
+    background-color: rgb(34, 1, 1);
+    position: relative;
+    transition-timing-function: ease-out;
+    animation-name: sombra;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    border-radius: 60px;
+    animation-delay: 1.5s;
+    z-index: 0;
+    transform: rotateX(45deg);
+    margin-top: -100px;
+    margin-left: -10px;
+    filter: blur(10px);
+    padding-top: 15px;
+}
+
+.buraco {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(22, 8, 8);
+    position: relative;
+    transition-timing-function: ease-out;
+    animation-name: buraco;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    border-radius: 50px;
+    animation-delay: 1.5s;
+    z-index: 5;
+    margin-top: -100px;
+    margin-left: 20px;
+    transform: rotateX(25deg);
+}
+
+.caracol_corpo {
+    width: 45px;
+    height: 45px;
+    background-color: rgb(252, 203, 116);
+    position: relative;
+    transition-timing-function: ease-out;
+    animation-name: corpo;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    border-radius: 50px;
+    animation-delay: 1.5s;
+    z-index: 6;
+    margin-top: -50px;
+    margin-left: 27px;
+    transform: rotateX(25deg);
+}
+
+.olho1 {
+    width: 8px;
+    height: 40px;
+    background-color: rgb(46, 5, 56);
+    position: relative;
+    transition-timing-function: ease-out;
+    animation-name: olho1;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    border-radius: 50px;
+    animation-delay: 1.5s;
+    z-index: 8;
+    margin-top: -40px;
+    margin-left: 35px;
+    border-color: rgb(30, 0, 36);
+    border-style: solid;
+    border-width: 2px;
+    transform: rotateX(88deg);
+}
+
+.olho2 {
+    width: 8px;
+    height: 40px;
+    background-color: rgb(173, 0, 101);
+    position: relative;
+    transition-timing-function: ease-out;
+    animation-name: olho2;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    border-radius: 20px;
+    animation-delay: 1.5s;
+    z-index: 8;
+    margin-top: -44px;
+    margin-left: 53px;
+    border-color: rgb(92, 0, 69);
+    border-style: solid;
+    border-width: 2px;
+    transform: rotateX(88deg);
+}
+
+.numero{
+    font-size: 45px;
+    position: relative;
+    margin-top: -50px;
+    z-index: 7;
+    margin-left: 39px;
+    transition-timing-function: ease-out;
+    animation-name: numero;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-delay: 1.5s;
+}
