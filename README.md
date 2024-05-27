@@ -1,4 +1,4 @@
-# bola3
+# Bola3
 Esse projeto é uma animação feita para praticar e aperfeiçoar o meu css, não é muito complicada mas certamente me ensinou muito.
 
 # Gif
